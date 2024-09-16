@@ -50,7 +50,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color:  orange;
+    color: #2980B9;
 }
 
 .nav-buttons {
@@ -73,7 +73,7 @@ body {
 }
 
 .signup-btn {
-    background-color: orange;
+    background-color: #2980B9;
     color: white;
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .signup-btn:hover {
-    background-color:   black;
+    background-color: #3498DB;
 }
 
 /* Encabezado */
@@ -152,7 +152,7 @@ body {
 
 .about-content h2 {
     font-size: 32px;
-    color:  orange;
+    color: #2980B9;
     margin-bottom: 20px;
 }
 
@@ -166,7 +166,7 @@ body {
 .about-content .read-more {
     display: inline-block;
     padding: 12px 30px;
-    background-color:   orange;
+    background-color: #2980B9;
     color: white;
     font-size: 18px;
     text-decoration: none;
@@ -175,10 +175,10 @@ body {
 }
 
 .about-content .read-more:hover {
-    background-color: orange;
+    background-color: #3498DB;
 }
 
-
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .about {
         flex-direction: column;
