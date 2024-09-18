@@ -7,23 +7,18 @@
     <link rel="stylesheet" href="StylesLog.css">
 </head>
 <body>
-    <div>
-        <form id="Login-form" action="">
-            <h2>Login</h2>
-            <label for="">Email Adress</label>
-            <input type="email" name="" id="">
-            <label for="">Password</label>
-            <input type="password" name="" id="">
-            <a id="fypbutton" href="">Forgot you password?</a>
-            <button type="submit">Log In</button>
-            <label for="">and if you dont have an account</label>
-            <button type="submit">Sing In</button>
-        </form>
-    </div>
-</body>
+    
+    <form action="/login" method="post">
+        <h2>Iniciar Sesión</h2>
+        <label for="username">Email</label><br>
+        <input type="text" id="username" name="username" required placeholder="Enter you email"><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required placeholder="Enter yout password"><br><br>
+        
+        <input type="submit" value="Iniciar Sesión"><br><br>
 
-<!-- git status -->
- <!-- git add --all -->
-<!-- git commit -m "" -->
- <!-- git push -u origin branch -->
+        <div class="textHolder"><p>Don't have and account?   </p> <br><p onclick="" style="color:#ff8800;;">     Sing Up</p>
+    </form>
+</body>
 </html>
