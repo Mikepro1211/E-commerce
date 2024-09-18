@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Registro para Psicólogos</title>
+</head>
+
+<body>
+    <div> <!--Encabezado-->
+        <header class="titulo">
+            <h1>Contact us</h1>
+            <div><img class="imagen1" src="logo.png" alt="Cargando"></div>
+        </header>
+    </div>
+
+    <div class="form"> <!--Información escrita-->
+        <div class="container">
+            <h1>Your name:</h1>
+            <input type="text" class="textInput" placeholder="Escribe aquí..." onkeydown="handleKeyPress(event, 'nameOutput')">
+            <div id="nameOutput"></div>
+            <h1>E-mail</h1>
+            <input type="text" class="textInput" placeholder="Escribe aquí..." onkeydown="handleKeyPress(event, 'surnameOutput')">
+            <div id="surnameOutput"></div>
+            <h1>Send a message:</h1>
+            <div class="comment-box">
+              <form id="comment-form">
+                <textarea id="comment-input" placeholder="Escribe tu comentario aquí..." onkeydown="handleKeyPress(event)"></textarea>
+                <button type="submit">Enviar</button>
+              </form>
+              <div id="comment-section"></div>
+            </div>
+    </div>
+   
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+              <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Tu Salud mental es lo primordial</p>
+              </div>
+              <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                  <li>Teléfono: 1234-1234</li>
+                  <li>Email: info@example.com</li>
+                  <li>Dirección: Calle Ejemplo 123, Ciudad</li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 MindWellness. Todos los derechos reservados.</p>
+            </div>
+          </footer>
+    </div>
+
+
+
+
+</body>
