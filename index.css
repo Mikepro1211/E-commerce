@@ -9,7 +9,6 @@ body {
 
 .cabeza {
    background-color: black
-
 }
 
 .navbar {
@@ -29,7 +28,7 @@ body {
 }
 
 .navbar ul li a {
-    color: rgb(10, 9, 9);
+    color: rgb(240, 225, 225);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
