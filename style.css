@@ -1,0 +1,88 @@
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 3%;    
+}
+  
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+  
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(207, 207, 207);
+    transform: translateY(-100%);
+    z-index: -1;
+}
+  
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 13px;
+    background-color: rgb(207, 207, 207); /* Color inactivo */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; /* Espacio entre el número y el texto */
+}
+  
+.step.active .circle {
+    background-color: orange; /* Color activo */
+}
+
+.step.active .label {
+    color: orange; /* Color activo */
+}
+  
+.step.active + .step::after {
+    background-color: rgb(207, 207, 207); /* Línea activa */
+    transform: translateY(-50%);
+}
+  
+.label {
+    font-size: 13px; /* Tamaño del texto */
+}
+  
+.izquierda {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.formulario-reserva {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario-reserva label {
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.formulario-reserva input[type="date"],
+.formulario-reserva input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 19px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleNav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Sunny Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#packages" class="active">Tour Packages</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="container">
+            <div class="dropdown">
+                <button class="dropbtn">Eng &#9662;</button>
+                <div class="dropdown-content">
+                    <a href="#">Español</a>
+                    <a href="#">Français</a>
+                    <a href="#">Deutsch</a>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="#login">Login</a>
+            </div>
+            <div class="buttons">
+                <button class="signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <div class="progress-bar">
+        <div class="step active">
+          <div class="circle">1</div>
+          <div class="label">Booking Details</div>
+        </div>
+        <div class="step">
+          <div class="circle">2</div>
+          <div class="label">Your Details</div>
+        </div>
+        <div class="step">
+          <div class="circle">3</div>
+          <div class="label">Payment</div>
+        </div>
+    </div>
+    <div class="izquierda">
+    <div class="formulario-reserva">
+        <label for="fecha-visita">When you will visit?</label>
+        <input type="date" id="fecha-visita">
+
+        <label for="hora-visita">Which time?</label>
+        <input type="time" id="hora-visita">
+        
+    </div>
+    </div>
+
+    <!-- <div class="box">
+        <h2>When you will visit?</h2>
+        <input type="date" id="visit-date" name="visit-date">
+        
+        <h2>Which time?</h2>
+        <input type="time" id="visit-time" name="visit-time">
+        
+        <h2>Select Your Tickets</h2>
+        <div class="ticket">
+            <label for="adult-tickets">Adult (18+)</label>
+            <input type="number" id="adult-tickets" name="adult-tickets" min="0" value="0">
+        </div>
+        <div class="ticket">
+            <label for="child-tickets">Child (6-17)</label>
+            <input type="number" id="child-tickets" name="child-tickets" min="0" value="0">
+        </div>
+        <div class="ticket">
+            <label for="infant-tickets">Infant (0-5)</label>
+            <input type="number" id="infant-tickets" name="infant-tickets" min="0" value="0">
+        </div>
+        
+        <div class="total-price">
+            <h3>Total Price: €<span id="total-price">0.00</span></h3>
+        </div>
+        
+        <button type="button" onclick="nextStep()">Go to the Next Step</button>
+  </div>
+       -->
+</body>
+</html>
