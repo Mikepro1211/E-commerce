@@ -42,8 +42,12 @@ body {
 .fP_p a{
     padding: 20px;
     text-decoration: none;
-    color: rgba(128, 128, 128, 0.467);
+    color: rgba(115, 115, 115, 0.467);
     font-size: 15px;
+}
+
+.fP_p a:hover{
+    color: rgba(85, 85, 85, 0.537);
 }
 
 .fP_p button{
@@ -56,6 +60,10 @@ body {
     background-color: orange;
     color: white;
     font-size: 17px;
+}
+
+.fP_p button:hover{
+    background-color: rgb(226, 147, 0);
 }
 
 .fP_p input{
@@ -86,5 +94,4 @@ body {
     margin-top: 10px;
     margin-left: 10px;
     rotate: 45deg;
-    
 }
