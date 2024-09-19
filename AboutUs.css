@@ -1,4 +1,4 @@
-/* Estilos globales */
+/* Estilos globales Hola mundo*/
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-/* Estilos del navbar */
+
 .navbar {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
