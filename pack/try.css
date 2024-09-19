@@ -15,14 +15,22 @@ body{
 } 
 
 .header{
-  background-color: rgba(255, 255, 255, 0.5); /* Blanco con 50% de transparencia */
+  background-color: rgba(255, 255, 255, 0.2); /* Blanco con 50% de transparencia */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   padding: 5px 10%;
+  position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: top 0.3s; /* Transición suave */
+    z-index: 1000
     
 }
+.header.hidden {
+  top: -100px;}
 /* nuevo code  */
 
 
