@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Tours</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="search-bar">
+        <button class="tour-button" onclick="selectTourType('public')">Public Tours</button>
+        <button class="tour-button" onclick="selectTourType('private')">Private Tours</button>
+        <select class="dropdown" id="date">
+            <option>Choose Date</option>
+            <!-- Opciones de fechas -->
+        </select>
+        <select class="dropdown" id="time">
+            <option>Choose Time</option>
+            <!-- Opciones de horas -->
+        </select>
+        <select class="dropdown" id="tour">
+            <option>Select Tour</option>
+            <!-- Opciones de tours -->
+        </select>
+        <select class="dropdown" id="types">
+            <option>Select Types</option>
+            <!-- Opciones de tipos -->
+        </select>
+
+        <!-- Sección de búsqueda -->
+        <input type="text" class="search-input" placeholder="Buscar..." id="searchQuery">
+        <button class="search-button" onclick="searchTours()">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+
+    <script>
+        function selectTourType(type) {
+            alert('Selected ' + type + ' tours');
+        }
+
+        function searchTours() {
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const tour = document.getElementById('tour').value;
+            const types = document.getElementById('types').value;
+            const query = document.getElementById('searchQuery').value;
+            alert('Searching tours with: ' + date + ', ' + time + ', ' + tour + ', ' + types + ', query: ' + query);
+        }
+    </script>
+</body>
+</html>
